@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Product \n Designer",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus sequi eveniet aspernatur quis soluta.",
+    "items": [
+      "Web page development.",
+      "I create UX element interactions.",
+      "I position your company brand.",
+      "Design and mockus of products for companies."
+    ]
+  },
+  {
+    "title": "UI/UX  \n Designer",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus sequi eveniet aspernatur quis soluta.",
+    "items": [
+      "Web page development.",
+      "I create UX element interactions.",
+      "I position your company brand.",
+      "Design and mockus of products for companies."
+    ]
+  },
+  {
+    "title": "Visual \n Designer",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus sequi eveniet aspernatur quis soluta.",
+    "items": [
+      "Web page development.",
+      "I create UX element interactions.",
+      "I position your company brand.",
+      "Design and mockus of products for companies."
+    ]
+  }
+]

@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import Modal from "./components/modal/Modal";
+
+import Header from "./layout/header/Header";
+import MainLayout from "./layout/main/MainLayout";
+import HomeSection from "./layout/sections/home/Home";
+import AboutSection from "./layout/sections/about/About";
+import SkillsSection from "./layout/sections/skills/Skills";
+import ServicesSection from "./layout/sections/services/Services";
+import WorkSection from "./layout/sections/work/Work";
+import TestimonialSection from "./layout/sections/testimonial/Testimonial";
+import ContactSection from "./layout/sections/contactme/Contact";
+
+import Footer from "./layout/footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Header />
+      <MainLayout>
+        <HomeSection />
+        <AboutSection />
+        <SkillsSection />
+        <ServicesSection />
+        <WorkSection />
+        <TestimonialSection />
+        <ContactSection />
+      </MainLayout>
+      <Footer />
+      <Modal />
+    </Fragment>
   );
 }
 

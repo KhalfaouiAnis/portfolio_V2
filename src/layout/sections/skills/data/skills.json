@@ -1,0 +1,78 @@
+{
+  "skills": [
+    {
+      "type": "Frontend developer",
+      "data": [
+        {
+          "group": [
+            {
+              "skillName": "HTML5",
+              "skillLevel": "Intermediate"
+            },
+            {
+              "skillName": "CSS3/SASS",
+              "skillLevel": "Intermediate"
+            },
+            {
+              "skillName": "Javascript/Typescript",
+              "skillLevel": "Advanced"
+            }
+          ]
+        },
+        {
+          "group": [
+            {
+              "skillName": "HTML5",
+              "skillLevel": "Intermediate"
+            },
+            {
+              "skillName": "CSS3/SASS",
+              "skillLevel": "Intermediate"
+            },
+            {
+              "skillName": "Javascript/Typescript",
+              "skillLevel": "Advanced"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Backend developer",
+      "data": [
+        {
+          "group": [
+            {
+              "skillName": "HTML5",
+              "skillLevel": "Intermediate"
+            },
+            {
+              "skillName": "CSS3/SASS",
+              "skillLevel": "Intermediate"
+            },
+            {
+              "skillName": "Javascript/Typescript",
+              "skillLevel": "Advanced"
+            }
+          ]
+        },
+        {
+          "group": [
+            {
+              "skillName": "HTML5",
+              "skillLevel": "Intermediate"
+            },
+            {
+              "skillName": "CSS3/SASS",
+              "skillLevel": "Intermediate"
+            },
+            {
+              "skillName": "Javascript/Typescript",
+              "skillLevel": "Advanced"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
