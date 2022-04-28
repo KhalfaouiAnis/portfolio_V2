@@ -18,7 +18,7 @@ const reducer = (state: modalState, action: ReducerAction): modalState => {
       return {
         ...state,
         show: false,
-        children: null,
+        // children: null,
       };
 
     default:

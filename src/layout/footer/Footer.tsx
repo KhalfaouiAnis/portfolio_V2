@@ -52,6 +52,7 @@ const Footer = () => {
         </ul>
 
         <span className="footer__copy">
+          hosted with <span style={{ color: "crimson" }}>❤</span> by GitHub |
           &#169; Anis-Khalfaoui, All rights reserved
         </span>
       </div>

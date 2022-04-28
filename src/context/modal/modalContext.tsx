@@ -1,11 +1,11 @@
-import React, { useReducer, useContext, Fragment } from "react";
+import React, { useReducer, useContext, Fragment, ReactNode } from "react";
 import reducer from "./modalReducer";
 import { actionTypes } from "./actionTypes";
 
 export interface modalState {
   show?: boolean;
-  children: any;
-  displayModal: (content: any) => any;
+  children: ReactNode;
+  displayModal: (content: ReactNode) => any;
   hideModal: () => any;
 }
 
@@ -17,7 +17,7 @@ const initialState: modalState = {
 };
 
 export interface ModalProps {
-  children: any;
+  children: ReactNode;
 }
 
 const ModalContext = React.createContext(initialState);

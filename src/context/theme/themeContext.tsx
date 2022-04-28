@@ -5,8 +5,6 @@ import { actionTypes } from "./actionTypes";
 // If user previously selected a theme
 const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
-
-// document.body.classList.remove(theme);
 document.body.classList.add(selectedTheme || "");
 
 export interface themeState {
@@ -27,6 +25,11 @@ const ThemeContextProvider = ({ children }: any) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const toggleTheme = (theme: string, icon: string) => {
+    localStorage.setItem("selected-theme", theme);
+    localStorage.setItem("selected-icon", icon);
+    document.body.classList.remove(state.theme);
+    document.body.classList.add(theme);
+
     dispatch({
       type: actionTypes.TOGGLE_THEME,
       payload: {

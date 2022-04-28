@@ -1,34 +1,27 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useThemeContext } from "../../context/theme/themeContext";
-import { themes, themeIcons } from "../../context/theme/actionTypes";
+import { useModalContext } from "../../context/modal/modalContext";
+import Joke from "./subComponents/Joke";
+import toggle from "./utils/toggle";
+import useOnScroll from "../../hooks/useOnScroll";
+import { scrollHandler, scrollActiveHandler } from "./utils/scrollHandlers";
 
 import "./header.styles.css";
 
 const Header = () => {
   const { theme, icon, toggleTheme } = useThemeContext();
-  const headerRef = useRef<HTMLElement>(null);
+  const { displayModal } = useModalContext();
+  const [iconClass, setIconClass] = useState("");
+  const headerRef = useRef<HTMLDivElement>(null);
+
+  useOnScroll(() => scrollHandler(headerRef));
+  useOnScroll(() => scrollActiveHandler());
 
   const handleThemeChange = () => {
-    const newTheme =
-      theme === themes.DARK_THEME ? themes.LIGHT_THEME : themes.DARK_THEME;
-    const currentIcon =
-      newTheme === themes.DARK_THEME
-        ? themeIcons.DARK_THEME_ICON
-        : themeIcons.LIGHT_THEME_ICON;
+    const newTheme = toggle(theme, "theme");
+    const currentIcon = toggle(newTheme, "icon");
     toggleTheme(newTheme, currentIcon);
-    localStorage.setItem("selected-theme", newTheme);
-    localStorage.setItem("selected-icon", currentIcon);
-    document.body.classList.remove(theme);
-    document.body.classList.add(newTheme);
   };
-
-  // useEffect(() => {
-  //   if (window.scrollY > 50) {
-  //     headerRef?.current?.classList.add("scroll-header");
-  //   } else {
-  //     headerRef?.current?.classList.remove("scroll-header");
-  //   }
-  // }, [document.documentElement.scrollHeight]);
 
   return (
     <header className="header" ref={headerRef}>
@@ -36,6 +29,12 @@ const Header = () => {
         <a href="#" className="nav__logo">
           Anis
         </a>
+        <i
+          title="Don't Laugh Challenge"
+          className="bx bx-smile clickable"
+          onClick={() => displayModal(<Joke />)}
+        ></i>
+        {/* Fixed bottom Navigation menu */}
         <div className="nav__menu">
           <ul className="nav__list">
             <li className="nav__item">
@@ -67,7 +66,9 @@ const Header = () => {
         </div>
         {/* Theme change btn */}
         <i
-          className={`bx bx-${icon} change-theme`}
+          onMouseEnter={() => setIconClass("bx-spin")}
+          onMouseLeave={() => setIconClass("")}
+          className={`bx bx-${icon} ${iconClass} change-theme`}
           onClick={() => handleThemeChange()}
         ></i>
       </nav>
