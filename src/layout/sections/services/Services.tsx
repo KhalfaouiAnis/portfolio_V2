@@ -1,7 +1,7 @@
 import React from "react";
 import SectionWrapper from "../../shared/SectionWrapper";
 import ServiceCard from "./subComponents/ServiceCard";
-import ModalItem from "../../../components/ModalItem";
+import ModalItem from "../../../components/modal/ModalItem";
 
 import services from "./data/services.json";
 import "./services.styles.css";
@@ -9,9 +9,9 @@ import "./services.styles.css";
 const renderContent = (title: string, description: string, items: string[]) => {
   return (
     <>
-      <h3 className="services__modal-title">{title}</h3>
-      <p className="services__modal-description">{description}</p>
-      <ul className="services__modal-list">
+      <h3 className="modal-title">{title}</h3>
+      <p className="modal-description">{description}</p>
+      <ul className="modal-list">
         {items.map((item) => (
           <ModalItem key={item} info={item} />
         ))}

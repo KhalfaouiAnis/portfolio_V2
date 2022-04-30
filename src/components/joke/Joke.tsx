@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import generateJoke from "../utils/generateJoke";
-import Emogi from "../../../assets/img/laughing.svg";
+import Emogi from "../../assets/img/laughing.svg";
 
 import "./joke.styles.css";
+import generateJoke from "../../utils/generateJoke";
 
 const Joke = () => {
   const [joke, setJoke] = useState("");
@@ -14,16 +14,18 @@ const Joke = () => {
     generateJoke()
       .then((joke) => {
         setJoke(joke);
-        setLoading(false);
       })
       .catch((err) => {
         setError(err);
-        setLoading(false);
-      });
+      })
+      .finally(() => setLoading(false));
   };
 
   useEffect(() => {
     handleGenerateJoke();
+    return () => {
+      setJoke("");
+    };
   }, []);
 
   if (error) {
@@ -43,7 +45,7 @@ const Joke = () => {
       </div>
 
       <button onClick={() => handleGenerateJoke()} className="button">
-        Get Another Joke
+        New Joke
       </button>
     </div>
   );

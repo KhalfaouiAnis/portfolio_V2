@@ -1,9 +1,5 @@
 /*=============== WORK ===============*/
-.work__container {
-  padding-top: 1rem;
-}
-
-.work__fillters {
+.work__filters {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +7,7 @@
   margin-bottom: 2rem;
 }
 
-.work__item {
+.work__filter {
   cursor: pointer;
   color: var(--title-color);
   padding: 0.25rem 0.75rem;
@@ -19,10 +15,27 @@
   border-radius: 0.5rem;
 }
 
+.work__container {
+  padding-top: 1rem;
+}
+
 .work__card {
   background-color: var(--container-color);
   padding: 1rem;
   border-radius: 1rem;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.work__card .visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.work__card.in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .work__img {

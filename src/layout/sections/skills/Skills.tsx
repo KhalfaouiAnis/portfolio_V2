@@ -8,7 +8,7 @@ import SkillItemContent from "./subComponents/SkillItemContent";
 const Skills = () => (
   <SectionWrapper name="skills">
     <span className="section__subtitle">My abilities</span>
-    <h2 className="section__title">My Experience</h2>
+    <h2 className="section__title">My Skills</h2>
 
     <div className="skills__container container grid">
       {/* {skills.map(({ data, type }) => (
@@ -36,7 +36,7 @@ const Skills = () => (
             <div className="skills__data">
               <i className="bx bxs-badge-check"></i>
               <div>
-                <h3 className="skills__name">Javascript/Typescript</h3>
+                <h3 className="skills__name">Js/Ts</h3>
                 <span className="skills__level">Advanced</span>
               </div>
             </div>
@@ -53,14 +53,14 @@ const Skills = () => (
             <div className="skills__data">
               <i className="bx bxs-badge-check"></i>
               <div>
-                <h3 className="skills__name">Git</h3>
+                <h3 className="skills__name">Materil UI</h3>
                 <span className="skills__level">Intermediate</span>
               </div>
             </div>
             <div className="skills__data">
               <i className="bx bxs-badge-check"></i>
               <div>
-                <h3 className="skills__name">React</h3>
+                <h3 className="skills__name">ReactJs</h3>
                 <span className="skills__level">Advanced</span>
               </div>
             </div>
@@ -89,7 +89,7 @@ const Skills = () => (
             <div className="skills__data">
               <i className="bx bxs-badge-check"></i>
               <div>
-                <h3 className="skills__name">Python</h3>
+                <h3 className="skills__name">Spring Boot</h3>
                 <span className="skills__level">Intermediate</span>
               </div>
             </div>
@@ -99,7 +99,7 @@ const Skills = () => (
             <div className="skills__data">
               <i className="bx bxs-badge-check"></i>
               <div>
-                <h3 className="skills__name">Spring Boot</h3>
+                <h3 className="skills__name">Python</h3>
                 <span className="skills__level">Intermediate</span>
               </div>
             </div>

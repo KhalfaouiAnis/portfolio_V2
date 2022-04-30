@@ -1,4 +1,4 @@
-import { themes, themeIcons } from "../../../context/theme/actionTypes";
+import { themes, themeIcons } from "../context/theme/actionTypes";
 
 const toggle = (value: string, type: "theme" | "icon"): string => {
   switch (type) {

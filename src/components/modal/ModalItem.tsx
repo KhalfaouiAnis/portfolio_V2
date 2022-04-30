@@ -5,9 +5,9 @@ type modalItemProps = {
 };
 
 const ModalItem = ({ info }: modalItemProps) => (
-  <li className="services__modal-item">
-    <i className={`bx bx-check services__modal-icon`}></i>
-    <p className="services__modal-info">{info}</p>
+  <li className="modal-item">
+    <i className={`bx bx-check modal-icon`}></i>
+    <p className="modal-info">{info}</p>
   </li>
 );
 

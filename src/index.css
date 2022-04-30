@@ -212,7 +212,7 @@ body.light-theme {
 }
 
 .section {
-  padding: 4.5rem 0 1rem;
+  padding: 2.5rem 0 1rem;
 }
 
 .section__title,
@@ -270,7 +270,6 @@ body.light-theme {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
 @media screen and (max-width: 320px) {
   .nav__menu {
     padding: 1rem 1.5rem;
@@ -288,7 +287,7 @@ body.light-theme {
   }
 
   .about__info {
-    grid-template-columns: repeat (2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .skills__box {
@@ -309,10 +308,24 @@ body.light-theme {
   .work__fillters {
     column-gap: 0.25rem;
   }
+
+  .joke__container img {
+    width: 70px;
+  }
+  .joke__container h3 {
+    letter-spacing: 1px;
+    font-size: var(--normal-font-size);
+  }
+  .joke__container .joke {
+    font-size: var(--small-font-size);
+    letter-spacing: 0.4px;
+    line-height: 1.8rem;
+    margin: 0.7rem auto;
+  }
 }
 
 /* For medium devices */
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 576px) {
   .nav__menu {
     width: 328px;
     left: 0;
@@ -321,7 +334,7 @@ body.light-theme {
   }
 
   .about__info {
-    grid-template-columns: repeat(3, 140px);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
   }
   .about__description {
@@ -339,11 +352,11 @@ body.light-theme {
     grid-template-columns: repeat(2, 160px);
     justify-content: center;
   }
-  .services__modal-content {
+  .modal-content {
     width: 500px;
     padding: 4.5rem 2.5rem 2.5rem;
   }
-  .services__modal-description {
+  .modal-description {
     padding: 0 3.5rem;
   }
 
@@ -477,5 +490,12 @@ body.light-theme {
     font-size: 1.25rem;
     padding: 0.4rem;
     border-radius: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1130px) {
+  .work__container {
+    grid-template-columns: repeat(3, max-content);
+    gap: 2rem;
   }
 }

@@ -11,12 +11,9 @@ const Modal = () => {
   useOnClickOutside(modalRef, () => hideModal());
 
   return (
-    <div className={`services__modal ${show ? "visible" : ""}`}>
-      <div ref={modalRef} className="services__modal-content">
-        <i
-          className="bx bx-x services__modal-close"
-          onClick={() => hideModal()}
-        />
+    <div className={`modal ${show ? "visible" : ""}`}>
+      <div ref={modalRef} className="modal-content">
+        <i className="bx bx-x modal-close" onClick={() => hideModal()} />
         {children}
       </div>
     </div>

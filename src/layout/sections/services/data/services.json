@@ -1,32 +1,30 @@
 [
   {
-    "title": "Product \n Designer",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus sequi eveniet aspernatur quis soluta.",
+    "title": "Web\nDeveloper",
+    "description": "Front & back end web development, mobile/tablet friendly user interfaces.",
     "items": [
-      "Web page development.",
+      "Web site development.",
+      "I create the user interfaces.",
+      "I prepare the back-end and services for the application",
+      "I create queries to communiquate with the database",
+      "I create the different types of tests for the application"
+    ]
+  },
+  {
+    "title": "UI/UX\nDesigner",
+    "description": "Service with more than 3 years of experience. Providing quality work to clients and companies.",
+    "items": [
       "I create UX element interactions.",
       "I position your company brand.",
       "Design and mockus of products for companies."
     ]
   },
   {
-    "title": "UI/UX  \n Designer",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus sequi eveniet aspernatur quis soluta.",
+    "title": "Software\nEngineer",
+    "description": "Different software engineering services, product conceptualisation, product architecture, design system.",
     "items": [
-      "Web page development.",
-      "I create UX element interactions.",
-      "I position your company brand.",
-      "Design and mockus of products for companies."
-    ]
-  },
-  {
-    "title": "Visual \n Designer",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus sequi eveniet aspernatur quis soluta.",
-    "items": [
-      "Web page development.",
-      "I create UX element interactions.",
-      "I position your company brand.",
-      "Design and mockus of products for companies."
+      "Product conceptualisation.",
+      "I decide on product design system."
     ]
   }
 ]
