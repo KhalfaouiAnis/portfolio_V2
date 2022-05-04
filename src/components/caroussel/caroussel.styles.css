@@ -1,0 +1,83 @@
+.caroussel__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.caroussel__content {
+  display: flex;
+  justify-content: center;
+}
+
+.caroussel__button-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.caroussel__left__arrow,
+.caroussel__right__arrow {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--title-color);
+}
+.caroussel__left__arrow {
+  left: 0;
+  top: 50%;
+}
+.caroussel__right__arrow {
+  right: 0;
+  top: 50%;
+}
+
+.caroussel__right__arrow:disabled,
+.caroussel__right__arrow[disabled],
+.caroussel__left__arrow:disabled,
+.caroussel__left__arrow[disabled] {
+  cursor: not-allowed;
+}
+
+.slide-in {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+}
+
+/* Animations for sliding the caroussel components */
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes slide-out {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}

@@ -5,17 +5,15 @@ import data from "./data/work.json";
 
 import "./work.styles.css";
 
-const filters = ["all", "web", "mobile", "reeltime"];
-
 const Work = () => {
   const [filteredItems, setFilteredItems] = useState(data);
-  const [filter, setFilter] = useState<string>(filters[0]);
-  const [isMounted, setIsMounted] = useState(true);
+  const [filter, setFilter] = useState<string>("all");
+  // const [isMounted, setIsMounted] = useState(true);
 
   const handleClickFilter = (e: SyntheticEvent) => {
     const { id } = e.target as HTMLElement;
     if (!id || id === filter) return;
-    setIsMounted(true);
+    // setIsMounted(true);
     setFilter(id);
     document.getElementById(id)?.classList.add("active-work");
     document.getElementById(filter)?.classList.remove("active-work");
@@ -65,7 +63,7 @@ const Work = () => {
         {filteredItems.map(({ image, title, link }) => (
           <Card
             key={title}
-            isMounted={isMounted}
+            isMounted={true}
             image={require(`../../../assets/img/${image}`)}
             title={title}
             link={link}

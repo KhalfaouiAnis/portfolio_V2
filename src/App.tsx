@@ -8,7 +8,7 @@ import AboutSection from "./layout/sections/about/About";
 import SkillsSection from "./layout/sections/skills/Skills";
 import ServicesSection from "./layout/sections/services/Services";
 import WorkSection from "./layout/sections/work/Work";
-import TestimonialSection from "./layout/sections/testimonial/Testimonial";
+// import TestimonialSection from "./layout/sections/testimonial/Testimonial";
 import ContactSection from "./layout/sections/contactme/Contact";
 
 import Footer from "./layout/footer/Footer";
@@ -23,7 +23,7 @@ function App() {
         <SkillsSection />
         <ServicesSection />
         <WorkSection />
-        <TestimonialSection />
+        {/* <TestimonialSection /> */}
         <ContactSection />
       </MainLayout>
       <Footer />

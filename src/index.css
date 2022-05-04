@@ -322,6 +322,13 @@ body.light-theme {
     line-height: 1.8rem;
     margin: 0.7rem auto;
   }
+  .testimonial__card {
+    width: 90%;
+  }
+  .testimonial__img {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
 /* For medium devices */
@@ -375,6 +382,9 @@ body.light-theme {
     width: 360px;
     margin: 0 auto;
   }
+  .caroussel__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -387,6 +397,9 @@ body.light-theme {
     justify-content: center;
     column-gap: 3rem;
   }
+  .caroussel__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* For large devices */
@@ -398,7 +411,7 @@ body.light-theme {
   }
 
   .section {
-    padding: 6.5rem 0 1rem;
+    padding: 4.5rem 0 1rem;
   }
   .section__title {
     margin-bottom: 3.5rem;
@@ -476,7 +489,7 @@ body.light-theme {
   }
 
   .testimonial__container {
-    width: 750px;
+    /* width: 750px; */
   }
   .testimonial__card {
     padding: 1.5rem 2rem;
@@ -497,5 +510,8 @@ body.light-theme {
   .work__container {
     grid-template-columns: repeat(3, max-content);
     gap: 2rem;
+  }
+  .caroussel__content {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

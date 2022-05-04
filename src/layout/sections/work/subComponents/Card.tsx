@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import useMountTransition from "../../../../hooks/useMountTransition";
 
 interface CardProps {
@@ -10,10 +10,6 @@ interface CardProps {
 
 const Card = ({ image, title, link, isMounted }: CardProps) => {
   const hasTransitionedIn = useMountTransition(isMounted, 500);
-
-  // console.log("hasTransitionedIn: ", hasTransitionedIn);
-
-  useEffect(() => {}, []);
 
   return (
     <>

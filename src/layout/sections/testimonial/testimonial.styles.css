@@ -1,16 +1,17 @@
-/*=============== TESTIMONIAL ===============*/
-
 .testimonial__card {
   background-color: var(--container-color);
   padding: 1.25rem 1.5rem;
-  border-radius: 1.5rem;
-  margin-bottom: 3rem;
+  border-radius: 1.2rem;
+  margin: 1rem 1rem;
+  width: 100%;
+  text-align: center;
 }
 
 .testimonial__img {
-  width: 60px;
-  border-radius: 3rem;
-  margin-bottom: 1rem;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  margin-bottom: 0.6rem;
 }
 
 .testimonial__name {
@@ -21,4 +22,11 @@
 
 .testimonial__description {
   font-size: var(--small-font-size);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -20px !important;
 }

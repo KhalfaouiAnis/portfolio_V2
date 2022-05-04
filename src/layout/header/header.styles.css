@@ -115,17 +115,3 @@
   bottom: -5px; /* change when direction change */
   left: 35px;
 }
-
-/* change when direction change */
-/* .nav a span ~ .bottom {
-  top: 0;
-}
-
-.nav a:hover span ~ .bottom {
-  top: 40px;
-}
-
-.nav a span::before ~ .bottom {
-  border-bottom: 5px solid var(--title-color);
-  top: -5px;
-} */
